@@ -1,12 +1,19 @@
 {
-  "name": "hello-serverless",
+  "name": "hello-serverless-aws",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple hello world application using AWS lambda + Serverless framework",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serverless": "serverless"
   },
-  "author": "",
+  "keywords": [
+    "serverless",
+    "aws",
+    "lambda",
+    "functions"
+  ],
+  "author": "Wilfredo Alcala",
   "license": "ISC",
   "devDependencies": {
     "serverless-offline": "^3.30.0"
