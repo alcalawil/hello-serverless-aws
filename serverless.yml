@@ -1,0 +1,16 @@
+service: hello-serverless 
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /hello
+          method: get
+
+plugins:
+  - serverless-offline
